@@ -1,0 +1,44 @@
+{
+  "name": "nftframer-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env-cmd -f .env nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veerasudhan98/nftframer-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veerasudhan98/nftframer-server/issues"
+  },
+  "homepage": "https://github.com/veerasudhan98/nftframer-server#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.4.0",
+    "path": "^0.12.7",
+    "validator": "^13.7.0",
+    "web3": "^1.7.4",
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
